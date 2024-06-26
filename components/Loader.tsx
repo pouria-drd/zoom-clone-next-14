@@ -9,7 +9,7 @@ const Loader = () => {
                 width={48}
                 height={48}
                 className="size-12"
-                loading="lazy"
+                priority={true}
             />
         </div>
     );
