@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/navbar/Navbar";
+import Sidebar from "@/components/navbar/Sidebar";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     return (

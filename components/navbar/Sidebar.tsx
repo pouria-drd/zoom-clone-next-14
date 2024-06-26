@@ -32,7 +32,7 @@ const Sidebar = () => {
                                 }
                             )}>
                             <Image
-                                className="size-auto"
+                                className="size-6"
                                 src={link.imgUrl}
                                 alt={link.label}
                                 width={24}
