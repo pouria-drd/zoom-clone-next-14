@@ -5,12 +5,14 @@ import { SignedIn, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
     return (
-        <nav className="bg-dark-1/90 glass flex-between fixed z-50 w-full px-6 py-4 lg:px-10">
+        <nav
+            className="bg-dark-1/90 glass flex-between fixed z-50 
+             px-6 py-4 lg:pl-6 lg:pr-10 w-full">
             <Link href="/" className="flex items-center gap-1">
                 <Image
                     src="/icons/logo.svg"
-                    width={32}
-                    height={32}
+                    width={40}
+                    height={40}
                     alt="yoom logo"
                     className="max-sm:size-10"
                     loading="lazy"

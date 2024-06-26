@@ -27,6 +27,7 @@ const HomeShortcutCard = (homeCardProps: HomeCardProps) => {
                     width={27}
                     height={27}
                     loading="lazy"
+                    className="size-7"
                 />
             </div>
 
