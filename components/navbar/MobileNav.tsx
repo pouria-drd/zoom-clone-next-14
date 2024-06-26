@@ -29,9 +29,12 @@ const MobileNav = () => {
                         height={36}
                         alt="hamburger icon"
                         className="cursor-pointer sm:hidden size-9"
+                        loading="lazy"
                     />
                 </SheetTrigger>
-                <SheetContent side="left" className="border-none bg-dark-1">
+                <SheetContent
+                    side="left"
+                    className="border-none bg-dark-1/90 glass">
                     <SheetDescription />
                     <Link href="/" className="flex items-center gap-1">
                         <Image
@@ -40,6 +43,7 @@ const MobileNav = () => {
                             width={32}
                             height={32}
                             alt="yoom logo"
+                            loading="lazy"
                         />
                         <p className="text-[26px] font-extrabold text-white">
                             YOOM
@@ -68,6 +72,7 @@ const MobileNav = () => {
                                                     alt={link.label}
                                                     width={20}
                                                     height={20}
+                                                    loading="lazy"
                                                 />
                                                 <p className="font-semibold">
                                                     {link.label}

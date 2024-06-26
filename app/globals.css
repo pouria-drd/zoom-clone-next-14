@@ -1,6 +1,22 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+::-webkit-scrollbar {
+    @apply bg-pd-scroll-bg w-2 h-1;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    @apply bg-pd-scroll rounded-none;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    @apply bg-pd-scroll rounded-none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;

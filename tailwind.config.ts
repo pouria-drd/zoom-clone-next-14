@@ -19,6 +19,10 @@ const config = {
         },
         extend: {
             colors: {
+                pd: {
+                    scroll: "#4d525d",
+                    "scroll-bg": "#333843",
+                },
                 dark: {
                     1: "#1C1F2E",
                     2: "#161925",

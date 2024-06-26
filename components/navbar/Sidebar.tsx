@@ -37,6 +37,7 @@ const Sidebar = () => {
                                 alt={link.label}
                                 width={24}
                                 height={24}
+                                loading="lazy"
                             />
                             <p className="text-lg font-semibold max-lg:hidden">
                                 {link.label}
