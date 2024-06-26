@@ -12,7 +12,7 @@ interface HomeCardProps {
     handleClick?: () => void;
 }
 
-const HomeCard = (homeCardProps: HomeCardProps) => {
+const HomeShortcutCard = (homeCardProps: HomeCardProps) => {
     return (
         <section
             className={cn(
@@ -40,4 +40,4 @@ const HomeCard = (homeCardProps: HomeCardProps) => {
     );
 };
 
-export default HomeCard;
+export default HomeShortcutCard;
