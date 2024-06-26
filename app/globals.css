@@ -42,11 +42,17 @@
     height: 40px;
 }
 
+.glass {
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+}
+
 .glassmorphism {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
+
 .glassmorphism2 {
     background: rgba(18, 17, 17, 0.25);
     backdrop-filter: blur(8px);
@@ -62,6 +68,7 @@
 .cl-logoBox {
     height: 40px;
 }
+
 .cl-dividerLine {
     background: #252a41;
     height: 2px;
@@ -74,6 +81,7 @@
 .cl-internal-wkkub3 {
     color: white;
 }
+
 .cl-userButtonPopoverActionButton {
     color: white;
 }
