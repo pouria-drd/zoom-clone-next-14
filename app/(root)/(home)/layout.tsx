@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
+
 import Navbar from "@/components/navbar/Navbar";
 import Sidebar from "@/components/navbar/Sidebar";
+
+export const metadata: Metadata = {
+    title: "YOOM",
+    description: "Video Calling app, created by Pouria Darandi",
+    icons: {
+        icon: "/icons/logo.svg",
+    },
+};
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     return (
