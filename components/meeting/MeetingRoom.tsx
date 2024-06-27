@@ -102,7 +102,7 @@ const MeetingRoom = () => {
                 </DropdownMenu>
                 <CallStatsButton />
                 <button onClick={() => setShowParticipants((prev) => !prev)}>
-                    <div className="cursor-pointer rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]  ">
+                    <div className="cursor-pointer rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]">
                         <Users size={20} className="text-white" />
                     </div>
                 </button>
