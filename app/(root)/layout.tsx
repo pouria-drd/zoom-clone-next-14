@@ -40,8 +40,32 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "https://yoom.liara.run/favicon.png",
+                width: 64,
+                height: 64,
+                alt: "YOOM - Video Calling app, created by Pouria Darandi",
+            },
+            {
+                url: "https://yoom.liara.run/favicon.png",
+                width: 128,
+                height: 128,
+                alt: "YOOM - Video Calling app, created by Pouria Darandi",
+            },
+            {
+                url: "https://yoom.liara.run/favicon.png",
+                width: 144,
+                height: 144,
+                alt: "YOOM - Video Calling app, created by Pouria Darandi",
+            },
+            {
+                url: "https://yoom.liara.run/favicon.png",
                 width: 256,
                 height: 256,
+                alt: "YOOM - Video Calling app, created by Pouria Darandi",
+            },
+            {
+                url: "https://yoom.liara.run/favicon.png",
+                width: 512,
+                height: 512,
                 alt: "YOOM - Video Calling app, created by Pouria Darandi",
             },
         ],
