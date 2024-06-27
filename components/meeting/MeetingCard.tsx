@@ -27,6 +27,7 @@ const MeetingCard = (meetingCardProps: MeetingCardProps) => {
             px-5 py-8 xl:max-w-[568px] min-h-[258px] w-full">
             <article className="flex flex-col gap-5">
                 <Image
+                    className="size-7"
                     src={meetingCardProps.icon}
                     alt="upcoming"
                     width={28}
@@ -52,7 +53,7 @@ const MeetingCard = (meetingCardProps: MeetingCardProps) => {
                             alt="attendees"
                             width={40}
                             height={40}
-                            className={cn("rounded-full", {
+                            className={cn("rounded-full size-10", {
                                 absolute: index > 0,
                             })}
                             style={{ top: 0, left: index * 28 }}
@@ -73,6 +74,7 @@ const MeetingCard = (meetingCardProps: MeetingCardProps) => {
                                     alt="feature"
                                     width={20}
                                     height={20}
+                                    className="size-auto"
                                 />
                             )}
                             &nbsp; {meetingCardProps.buttonText}
@@ -92,6 +94,7 @@ const MeetingCard = (meetingCardProps: MeetingCardProps) => {
                                 alt="feature"
                                 width={20}
                                 height={20}
+                                className="size-5"
                             />
                             &nbsp; Copy Link
                         </Button>
