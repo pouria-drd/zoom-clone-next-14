@@ -5,6 +5,7 @@ import ReactDatePicker from "react-datepicker";
 import HomeShortcutCard from "../HomeShortcutCard";
 
 import { useState } from "react";
+import { Input } from "../ui/input";
 import { useUser } from "@clerk/nextjs";
 import { Textarea } from "../ui/textarea";
 import { useToast } from "../ui/use-toast";
@@ -167,8 +168,24 @@ const MeetingList = () => {
                 buttonText="Start Meeting"
                 handleClick={createMeeting}
                 isOpen={meetingState === "isInstantMeeting"}
+                onClose={() => setMeetingState(undefined)}>
+                Start an instant meeting
+            </MeetingModal>
+
+            <MeetingModal
+                isOpen={meetingState === "isJoiningMeeting"}
                 onClose={() => setMeetingState(undefined)}
-            />
+                title="Type the link here"
+                buttonText="Join Meeting"
+                handleClick={() => router.push(values.link)}>
+                <Input
+                    placeholder="Meeting link"
+                    onChange={(e) =>
+                        setValues({ ...values, link: e.target.value })
+                    }
+                    className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+                />
+            </MeetingModal>
         </section>
     );
 };

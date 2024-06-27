@@ -92,7 +92,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
                                 0,
                                 20
                             ) ||
-                            "No Description"
+                            "Personal Meeting"
                         }
                         date={
                             (
